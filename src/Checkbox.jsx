@@ -19,8 +19,10 @@ const StyledLabel = styled.label`
   display: flex;
   align-items: center;
   user-select: none;
+  cursor: default;
 
   &:before {
+    display: block;
     content: "";
     height: 1.5rem;
     width: 1.5rem;
@@ -30,9 +32,13 @@ const StyledLabel = styled.label`
   }
 
   &:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
     opacity: 0;
     content: "";
-    position: absolute;
     height: 1.5rem;
     width: 1.5rem;
     border: 2px solid transparent;
