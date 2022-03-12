@@ -10,18 +10,18 @@ const GlobalStyles = createGlobalStyle`
   .js-focus-visible input {
     &:focus:not(.focus-visible) + label {
       &:before {
-        /* outline: none; */
+        outline: none;
       }
     }
   }
 
   /* 키보드 focus 스타일링 */
   .js-focus-visible input.focus-visible {
-     &:focus + label {
-       &:before {
-        outline: 2px solid blue;
-       }
-     }
+    &:focus + label {
+      &:before {
+      outline: 2px solid blue;
+      }
+    }
   }
 `;
 
