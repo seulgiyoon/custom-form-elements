@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
   .js-focus-visible input {
     &:focus:not(.focus-visible) + label {
       &:before {
-        outline: none;
+        /* outline: none; */
       }
     }
   }
